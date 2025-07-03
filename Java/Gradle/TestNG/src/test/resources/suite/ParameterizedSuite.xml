@@ -1,0 +1,12 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "ParameterizedSuite">
+    <test name = "LoginTest">
+        <parameter name="username" value="vicky.thakor"/>
+        <parameter name="password" value="admin"/>
+        <classes>
+            <class name = "com.bytescraft.misc.ParameterizedTest"/>
+        </classes>
+    </test>
+</suite>

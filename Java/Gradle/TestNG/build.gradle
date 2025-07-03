@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+        vendor = JvmVendorSpec.AMAZON
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.testng:testng:7.5.1'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.8.3'
+    implementation 'io.github.bonigarcia:webdrivermanager:6.1.0'
+}
+
+tasks.named('test') {
+    useTestNG()
+}

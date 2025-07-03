@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "IndividualTestCaseSuite">
+    <test name = "IndividualTestCaseSuiteTest">
+        <classes>
+            <class name = "com.bytescraft.math.BasicCalculatorTests">
+                <methods>
+                    <include name="multiply_test" />
+                    <include name="divide_test" />
+                </methods>
+            </class>
+            <class name = "com.bytescraft.math.ScientificCalculatorTests" />
+        </classes>
+    </test>
+</suite>

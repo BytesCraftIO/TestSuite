@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="CustomListenerSuite">
+    <listeners>
+        <listener class-name="com.bytescraft.listener.CustomListener"/>
+    </listeners>
+    <test name="CustomListenerSuiteTest">
+        <classes>
+            <class name="com.bytescraft.math.BasicCalculatorTests">
+                <methods>
+                    <include name="add_test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
