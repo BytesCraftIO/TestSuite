@@ -7,6 +7,7 @@
             <package name="com.bytescraft.*">
                 <exclude name="com.bytescraft.browser"/>
                 <exclude name="com.bytescraft.misc"/>
+                <exclude name="com.bytescraft.depends"/>
             </package>
         </packages>
     </test>
